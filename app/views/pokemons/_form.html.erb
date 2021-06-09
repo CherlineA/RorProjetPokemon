@@ -1,0 +1,62 @@
+<%= form_with(model: pokemon) do |form| %>
+  <% if pokemon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pokemon.errors.count, "error") %> prohibited this pokemon from being saved:</h2>
+
+      <ul>
+        <% pokemon.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :numero %>
+    <%= form.number_field :numero %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nom %>
+    <%= form.text_field :nom %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hp %>
+    <%= form.number_field :hp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :attack %>
+    <%= form.number_field :attack %>
+  </div>
+
+  <div class="field">
+    <%= form.label :defense %>
+    <%= form.number_field :defense %>
+  </div>
+
+  <div class="field">
+    <%= form.label :speAttack %>
+    <%= form.number_field :speAttack %>
+  </div>
+
+  <div class="field">
+    <%= form.label :speDefense %>
+    <%= form.number_field :speDefense %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vitesse %>
+    <%= form.number_field :vitesse %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total %>
+    <%= form.number_field :total %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

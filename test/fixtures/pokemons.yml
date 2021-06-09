@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero: 1
+  nom: MyString
+  hp: 1
+  attack: 1
+  defense: 1
+  speAttack: 1
+  speDefense: 1
+  vitesse: 1
+  total: 1
+
+two:
+  numero: 1
+  nom: MyString
+  hp: 1
+  attack: 1
+  defense: 1
+  speAttack: 1
+  speDefense: 1
+  vitesse: 1
+  total: 1
